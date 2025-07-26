@@ -1,6 +1,6 @@
 const loadProducts = async () => {
   try {
-    const response = await fetch('../../data/data.json');
+    const response = await fetch('./data.json');
 
     if (!response.ok) {
       throw new Error(`Ошибка сети: ${response.status} ${response.statusText}`);
