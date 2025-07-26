@@ -49,14 +49,14 @@
 
 ### Оглавление
 
-- [Структура проекта](#структура-проекта-1)
-- [Директории](#директории-1)
-  - [`api`](#api-1)
-  - [`components`](#components-1)
-  - [`modules`](#modules-1)
-  - [`render`](#render-1)
-  - [`store`](#store-1)
-  - [`utils`](#utils-1)
+- [Структура проекта](#структура-проекта)
+- [Директории](#директории)
+  - [`api`](#api)
+  - [`components`](#components)
+  - [`modules`](#modules)
+  - [`render`](#render)
+  - [`store`](#store)
+  - [`utils`](#utils)
 
 ### Структура проекта
 
