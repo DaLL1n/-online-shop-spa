@@ -1,0 +1,75 @@
+.modal-form {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  &__block {
+    width: 719px;
+    height: 256px;
+    background-color: $color-white;
+    padding: 60px;
+    border-radius: 16px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__close {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0 0 5px;
+    margin: 0;
+
+    &::before {
+      content: 'x';
+      font-size: 32px;
+      position: absolute;
+      color: $color-dim-gray;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+
+    & + svg {
+      margin: 0 0 16px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0 0 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  &.hidden {
+    visibility: hidden;
+  }
+}
